@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E6D593DC-CA89-42AE-AADE-0AF0661F06EA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PhoneLocator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="B:\Users\Public\Documents\Embarcadero\Studio\17.0\Samples\Object Pascal\Mobile Snippets\CameraComponent\CameraComponent.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PhoneLocator">
+        <MSBuild Projects="PhoneLocator.dproj"/>
+    </Target>
+    <Target Name="PhoneLocator:Clean">
+        <MSBuild Projects="PhoneLocator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PhoneLocator:Make">
+        <MSBuild Projects="PhoneLocator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CameraComponent">
+        <MSBuild Projects="B:\Users\Public\Documents\Embarcadero\Studio\17.0\Samples\Object Pascal\Mobile Snippets\CameraComponent\CameraComponent.dproj"/>
+    </Target>
+    <Target Name="CameraComponent:Clean">
+        <MSBuild Projects="B:\Users\Public\Documents\Embarcadero\Studio\17.0\Samples\Object Pascal\Mobile Snippets\CameraComponent\CameraComponent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CameraComponent:Make">
+        <MSBuild Projects="B:\Users\Public\Documents\Embarcadero\Studio\17.0\Samples\Object Pascal\Mobile Snippets\CameraComponent\CameraComponent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PhoneLocator;CameraComponent"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PhoneLocator:Clean;CameraComponent:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PhoneLocator:Make;CameraComponent:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

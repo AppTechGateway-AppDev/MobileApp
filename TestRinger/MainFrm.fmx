@@ -1,0 +1,125 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 487
+  ClientWidth = 370
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object LogMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Position.X = 4.000000000000000000
+    Position.Y = 53.000000000000000000
+    Size.Width = 362.000000000000000000
+    Size.Height = 164.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Visible = False
+    Viewport.Width = 358.000000000000000000
+    Viewport.Height = 160.000000000000000000
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 80
+    Top = 352
+  end
+  object btnRing: TButton
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 237.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Ring'
+    Visible = False
+    OnClick = btnRingClick
+  end
+  object Label1: TLabel
+    Align = Top
+    Size.Width = 370.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Ringer v1.0.7'
+  end
+  object Button1: TButton
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 237.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Read SMS Inbox'
+    Visible = False
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 294.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Clear memo list'
+    Visible = False
+    OnClick = Button2Click
+  end
+  object timerGetSMS: TTimer
+    Interval = 10000
+    OnTimer = timerGetSMSTimer
+    Left = 40
+    Top = 64
+  end
+  object Button3: TButton
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 69.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Blink Flash Light for 10 sec.'
+    OnClick = Button3Click
+  end
+  object CameraComponent: TCameraComponent
+    Left = 286
+    Top = 112
+  end
+  object timerFlasher: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = timerFlasherTimer
+    Left = 120
+    Top = 64
+  end
+  object timerLightDuration: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = timerLightDurationTimer
+    Left = 120
+    Top = 112
+  end
+end

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<PMyMacBookAir iOSSimulator="iPhone5"/>
+		<NoProfile Android="3004a62a90602200"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>2018/07/31 19:41:15.000.623,E:\XEProjects\AppTech-CustFeedBack\Ringer\MultiReceiverDemo.dproj=E:\XEProjects\AppTech-CustFeedBack\Ringer\PhoneLocator.dproj</Transaction>
+    <Transaction>2018/08/01 19:33:37.000.803,=E:\XEProjects\AppTech-CustFeedBack\Test\telephone-ring-01a.mp3</Transaction>
+    <Transaction>2018/08/01 21:45:30.000.222,=E:\XEProjects\AppTech-CustFeedBack\Ringer\PhoneLoc.INI</Transaction>
+    <Transaction>2018/08/03 03:05:47.000.078,=E:\XEProjects\AppTech-CustFeedBack\Ringer\phone-off-hook-1.mp3</Transaction>
+    <Transaction>2018/08/04 01:30:01.000.667,=E:\XEProjects\AppTech-CustFeedBack\Ringer\Loud_Alarm_Clock_Buzzer-Muk1984-493547174_Plus3db.mp3</Transaction>
+    <Transaction>2018/08/04 01:45:22.000.132,=E:\XEProjects\AppTech-CustFeedBack\Ringer\RingMP3\Siren_Noise-KevanGC-1337458893_Plus2db.mp3</Transaction>
+    <Transaction>2018/08/22 16:51:50.000.635,=D:\Trials\DownloadImageServiceDemo\DW.SMSMessage.Types.pas</Transaction>
+    <Transaction>2018/08/22 16:51:50.000.649,=D:\Trials\DownloadImageServiceDemo\DW.SMSReceiver.Android.pas</Transaction>
+  </Transactions>
+</BorlandProject>
