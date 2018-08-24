@@ -21,6 +21,7 @@ type
     Image1: TImage;
     lblVersion: TLabel;
     Layout2: TLayout;
+    Label1: TLabel;
     procedure btnCancelClick(Sender: TObject);
   private
     FOnCloseTab: ^TProc;

@@ -402,6 +402,15 @@
             <Overwrite>True</Overwrite>
             <Required>True</Required>
         </DeployFile>
+        <DeployFile Include="..\RingMP3\Siren_Noise-KevanGC-1337458893_Plus2db.mp3" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>AppTech\assets\internal\</RemoteDir>
+            <RemoteName>Siren_Noise-KevanGC-1337458893_Plus2db.mp3</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="..\Docs\Downloaded\FromTomLogo\apptechportal graphics2\apptechportal_640x480.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>AppTech\res\drawable-large\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>

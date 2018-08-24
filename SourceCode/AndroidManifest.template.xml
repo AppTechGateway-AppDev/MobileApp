@@ -7,7 +7,7 @@
         android:installLocation="%installLocation%">
 
     <!-- This is the platform API where NativeActivity was introduced. -->
-    <uses-sdk android:minSdkVersion="%minSdkVersion%" android:targetSdkVersion="26" />
+    <uses-sdk android:minSdkVersion="%minSdkVersion%" android:targetSdkVersion="%targetSdkVersion%" />
 <%uses-permission%>
     <uses-feature android:glEsVersion="0x00020000" android:required="True"/>
     <application android:persistent="%persistent%" 
@@ -18,14 +18,6 @@
         android:icon="%icon%"
         android:theme="%theme%"
         android:hardwareAccelerated="%hardwareAccelerated%">
-        <!-- **** ADD THIS SECTION **** 
-        <provider
-            android:name="com.android.providers.telephony.SmsProvider"
-            android:authorities="com.apptechgateway.AppTech"
-            android:exported="false"
-            android:grantUriPermissions="true">
-        </provider> -->
-		
 
 <%application-meta-data%>
 		<%services%>

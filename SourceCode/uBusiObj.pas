@@ -104,7 +104,8 @@ begin
     Result.FullName := lIniFile.ReadString('Regis', 'FullName', '');
     Result.ShortName := lIniFile.ReadString('Regis', 'ShortName', '');
     Result.Email := lIniFile.ReadString('Regis', 'Email', '');
-    Result.RingPIN := lIniFile.ReadString('Ringer', 'RingPIN', '')
+    Result.RingPIN := lIniFile.ReadString('Ringer', 'RingPIN', '');
+    Result.LastRingRcvdTimeStamp := lIniFile.ReadString('Ringer', 'LastRingRcvdTimeStamp', '');
   finally
     lIniFile.Free;
   end;
