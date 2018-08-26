@@ -1,0 +1,90 @@
+object fraEstabComp: TfraEstabComp
+  Align = Client
+  Size.Width = 407.000000000000000000
+  Size.Height = 376.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Size.Width = 407.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnCancel: TSpeedButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      OnClick = btnCancelClick
+    end
+    object lblHeaderTItle: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 407.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Complaint'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 407.000000000000000000
+    Size.Height = 336.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lblEstabName: TLabel
+      Align = Top
+      StyledSettings = [Family, FontColor]
+      Margins.Top = 15.000000000000000000
+      Position.Y = 15.000000000000000000
+      Size.Width = 407.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.HorzAlign = Center
+      Text = 'lblEstabName'
+    end
+    object Label1: TLabel
+      Align = Top
+      Margins.Top = 25.000000000000000000
+      Position.Y = 81.000000000000000000
+      Size.Width = 407.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Complaint / Comment:'
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 3
+      Position.X = 20.000000000000000000
+      Position.Y = 115.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Size.Width = 367.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button1: TButton
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 157.000000000000000000
+      Size.Width = 367.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'SUBMIT'
+      OnClick = Button3Click
+    end
+  end
+end

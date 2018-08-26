@@ -1,0 +1,223 @@
+object fraEstabMenu: TfraEstabMenu
+  Align = Client
+  Size.Width = 501.000000000000000000
+  Size.Height = 430.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Size.Width = 501.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnCancel: TSpeedButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      OnClick = btnCancelClick
+    end
+    object lblHeaderTItle: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 501.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Member Business List'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 501.000000000000000000
+    Size.Height = 390.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 501.000000000000000000
+      Size.Height = 309.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      DisableFocusEffect = True
+      ItemHeight = 50.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemlabel'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 501.000000000000000000
+      Viewport.Height = 309.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        Selectable = False
+        TextSettings.HorzAlign = Center
+        StyledSettings = [Family, Size, Style, FontColor]
+        Size.Width = 501.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Button2: TButton
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 481.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Map'
+          OnClick = Button2Click
+        end
+      end
+      object ListBoxItem2: TListBoxItem
+        Selectable = False
+        TextSettings.HorzAlign = Center
+        StyledSettings = [Family, Size, Style, FontColor]
+        Position.Y = 50.000000000000000000
+        Size.Width = 501.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Button1: TButton
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 481.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Complaint / Comment'
+          OnClick = Button1Click
+        end
+      end
+      object ListBoxItem3: TListBoxItem
+        Selectable = False
+        TextSettings.HorzAlign = Center
+        StyledSettings = [Family, Size, Style, FontColor]
+        Position.Y = 100.000000000000000000
+        Size.Width = 501.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Button3: TButton
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 481.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Take Survey'
+          OnClick = Button3Click
+        end
+      end
+    end
+    object Rectangle1: TRectangle
+      Align = Top
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF10A37F
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF10A37F
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Sides = []
+      Size.Width = 501.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      object shpCarPic: TCircle
+        Align = MostLeft
+        Fill.Bitmap.Bitmap.PNG = {
+          89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+          A2000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          00B949444154484BED55410E80200C430F7ECDA7F854DFE14B9411316432D880
+          C105124FD076EBBA684CFDD92DC5594FC367F0829785DC7C58F9CB50F0B0349B
+          B6704CD097AFD631CC102CF51D62BFD48481182CA58EAA702A1562E1B53C6375
+          C8295CE79F003DCCEA0515994A277E1B420197BAFF7911131611BC8CA5057F05
+          89F731234CF20D9B710F61E83AFC9C499270E59685930D3284AD674CFEC57A58
+          1D756A98F09C712EB9CDEEE78CE71E370B13266AB9C7DC229DE60353E82CD994
+          FBE1000000000049454E44AE426082}
+        Fill.Bitmap.WrapMode = TileStretch
+        Fill.Kind = Bitmap
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 79.000000000000000000
+        Size.Height = 71.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object Label1: TLabel
+          StyledSettings = [Family, Size, Style]
+          Position.Y = 8.000000000000000000
+          TextSettings.FontColor = claCrimson
+          Text = 'Logo here'
+        end
+      end
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF10A37F
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF10A37F
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 89.000000000000000000
+        Sides = []
+        Size.Width = 412.000000000000000000
+        Size.Height = 81.000000000000000000
+        Size.PlatformDefault = False
+        object lblAddress: TLabel
+          Align = MostBottom
+          AutoSize = True
+          StyledSettings = [Family, Size, Style]
+          Margins.Bottom = 5.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 412.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Trailing
+          Text = 'Address'
+        end
+        object lblName: TLabel
+          Align = Bottom
+          AutoSize = True
+          StyledSettings = [Family, Style]
+          Margins.Top = 5.000000000000000000
+          Position.Y = 33.000000000000000000
+          Size.Width = 412.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelstyle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Trailing
+          Text = 'Establishment Name'
+        end
+      end
+    end
+  end
+end

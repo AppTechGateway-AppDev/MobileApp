@@ -1,0 +1,187 @@
+object fraEstabList: TfraEstabList
+  Align = Client
+  Size.Width = 471.000000000000000000
+  Size.Height = 413.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Size.Width = 471.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnCancel: TSpeedButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      OnClick = btnCancelClick
+    end
+    object btnDone: TSpeedButton
+      Align = Right
+      Margins.Right = 5.000000000000000000
+      Position.X = 328.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'donetoolbutton'
+      Text = 'DoneX'
+      Visible = False
+      OnClick = btnDoneClick
+    end
+    object lblHeaderTItle: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 471.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Member Business List'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Size.Width = 471.000000000000000000
+    Size.Height = 373.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object TabControl1: TTabControl
+      Align = Client
+      FullSize = True
+      Size.Width = 451.000000000000000000
+      Size.Height = 306.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabcontrolstyle'
+      TabHeight = 18.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = Bottom
+      object tabiList: TTabItem
+        CustomIcon.Height = 16
+        CustomIcon.Width = 16
+        CustomIcon = <
+          item
+          end>
+        TextSettings.WordWrap = True
+        IsSelected = True
+        Size.Width = 224.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'tabitemstyle'
+        TabOrder = 0
+        Text = 'List'
+        ExplicitSize.cx = 224.000000000000000000
+        ExplicitSize.cy = 18.000000000000000000
+        object tvMain: TksTableView
+          AccessoryOptions.Color = claAntiquewhite
+          Align = Client
+          Appearence.Background.Kind = None
+          Appearence.ItemBackground.Kind = Gradient
+          Appearence.ItemBackground.Gradient.Points = <
+            item
+              Color = xFF10A37F
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF10A37F
+              Offset = 1.000000000000000000
+            end>
+          Appearence.ItemBackground.Gradient.StartPosition.X = 0.500000000000000000
+          Appearence.ItemBackground.Gradient.StartPosition.Y = 1.000000000000000000
+          Appearence.ItemBackground.Gradient.StopPosition.X = 0.499999970197677600
+          Appearence.ItemBackground.Gradient.StopPosition.Y = 0.000000000000000000
+          BackgroundText.Font.Size = 18.000000000000000000
+          DeleteButton.Text = 'Delete'
+          DragDropOptions.Opacity = 1.000000000000000000
+          HeaderOptions.Color = claNull
+          HeaderOptions.StickyHeaders.Button.JumpToHeaderOptions.HeaderHeight = 32.000000000000000000
+          HeaderOptions.StickyHeaders.Button.JumpToHeaderOptions.ItemHeight = 32.000000000000000000
+          PullToRefresh.Font.Size = 16.000000000000000000
+          PullToRefresh.PullText = 'pull to refresh'
+          PullToRefresh.ReleaseText = 'release to refresh'
+          SearchVisible = True
+          SelectionOptions.SelectionOverlay.Size = 0
+          Size.Width = 451.000000000000000000
+          Size.Height = 288.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TextDefaults.Title.Font.Size = 13.000000000000000000
+          TextDefaults.Title.Font.Style = [fsBold]
+          TextDefaults.Title.TextColor = claWhite
+          TextDefaults.SubTitle.Font.Size = 13.000000000000000000
+          TextDefaults.SubTitle.TextColor = claGainsboro
+          TextDefaults.Detail.Font.Size = 13.000000000000000000
+          TextDefaults.Detail.TextColor = claGainsboro
+          TextDefaults.Header.Font.Size = 13.000000000000000000
+          TextDefaults.Header.TextColor = claBlack
+          OnItemClick = tvMainItemClick
+        end
+      end
+      object tabiMap: TTabItem
+        CustomIcon.Height = 16
+        CustomIcon.Width = 16
+        CustomIcon = <
+          item
+          end>
+        TextSettings.WordWrap = True
+        IsSelected = False
+        Size.Width = 225.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'tabitemstyle'
+        TabOrder = 0
+        Text = 'Map'
+        ExplicitSize.cx = 225.000000000000000000
+        ExplicitSize.cy = 18.000000000000000000
+        object Label2: TLabel
+          Align = Center
+          StyledSettings = [Family, Size]
+          TextSettings.Font.Style = [fsBold, fsUnderline]
+          TextSettings.FontColor = claGreen
+          TextSettings.HorzAlign = Center
+          Text = 'ToDo'
+        end
+      end
+    end
+    object Panel1: TPanel
+      Align = Top
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 5.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 451.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object cboxCategory: TComboBox
+        Align = Client
+        Size.Width = 377.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClosePopup = cboxCategoryClosePopup
+      end
+      object Label1: TLabel
+        Align = Left
+        AutoSize = True
+        Margins.Right = 10.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 54.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Category:'
+      end
+    end
+  end
+end

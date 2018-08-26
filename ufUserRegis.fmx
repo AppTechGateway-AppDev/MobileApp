@@ -1,0 +1,344 @@
+object fraUserRegis: TfraUserRegis
+  Align = Client
+  Size.Width = 534.000000000000000000
+  Size.Height = 585.000000000000000000
+  Size.PlatformDefault = False
+  OnPaint = FramePaint
+  object ToolBar1: TToolBar
+    Size.Width = 534.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnCancel: TSpeedButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      OnClick = btnCancelClick
+    end
+    object lblHeaderTItle: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 534.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'User Registration'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 534.000000000000000000
+    Size.Height = 545.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ListBox1: TListBox
+      Align = Client
+      Padding.Top = 2.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Size.Width = 534.000000000000000000
+      Size.Height = 535.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 518.000000000000000000
+      Viewport.Height = 535.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        Selectable = False
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Email:'
+          object edtEmail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            StyleLookup = 'editstyle'
+            TabOrder = 0
+            KeyboardType = EmailAddress
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Required'
+          end
+        end
+      end
+      object ListBoxItem2: TListBoxItem
+        Selectable = False
+        Position.Y = 80.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label3: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Fullname:'
+          object edtFullName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Required'
+          end
+        end
+      end
+      object ListBoxItem3: TListBoxItem
+        Selectable = False
+        Position.Y = 160.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label4: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Short name:'
+          object edtShortName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Optional'
+          end
+        end
+      end
+      object ListBoxItem9: TListBoxItem
+        Selectable = False
+        Position.Y = 240.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        object Label8: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Best Number to reach you:'
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Optional'
+          end
+        end
+      end
+      object ListBoxItem4: TListBoxItem
+        Selectable = False
+        Position.Y = 320.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label5: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Ringer PIN:'
+          object edtRingerPIN: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Required'
+          end
+        end
+      end
+      object ListBoxItem5: TListBoxItem
+        Selectable = False
+        Position.Y = 400.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Label6: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Password:'
+          object edtPassword: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Password = True
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Required'
+          end
+          object chkbxShowPass: TCheckBox
+            Align = Right
+            Margins.Top = 5.000000000000000000
+            Position.X = 222.000000000000000000
+            Position.Y = 45.000000000000000000
+            Size.Width = 78.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Show'
+            TextSettings.FontColor = claWhite
+            OnChange = chkbxShowPassChange
+          end
+        end
+      end
+      object ListBoxItem6: TListBoxItem
+        Selectable = False
+        Position.Y = 480.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Label7: TLabel
+          Align = HorzCenter
+          Position.X = 109.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Leading
+          Text = 'Retype password:'
+          object edtRetypePassword: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Password = True
+            Position.Y = 18.000000000000000000
+            Margins.Top = 18.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Required'
+          end
+        end
+      end
+      object ListBoxItem8: TListBoxItem
+        Selectable = False
+        Position.Y = 560.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 113.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        object fgLinkedLabel2: TfgLinkedLabel
+          Align = HorzCenter
+          StyledSettings = []
+          HitTest = True
+          Margins.Top = 15.000000000000000000
+          Position.X = 108.000000000000000000
+          Position.Y = 18.000000000000000000
+          Scale.X = 1.200000047683716000
+          Scale.Y = 1.200000047683716000
+          Size.Width = 250.000000000000000000
+          Size.Height = 79.166664123535160000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Style = [fsUnderline]
+          TextSettings.FontColor = claTeal
+          TextSettings.VertAlign = Leading
+          TextSettings.WordWrap = False
+          Text = 'Our Privacy Policy'
+          Color = claTeal
+          Url = 'https://apptechgateway.com/privacy-policy/'
+          VisitedColor = claWhite
+          object chkbxIHaveRead: TCheckBox
+            Align = Bottom
+            Margins.Top = 50.000000000000000000
+            Position.Y = 41.166664123535160000
+            Size.Width = 250.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'I have read and understand the above policy.'
+            TextSettings.FontColor = claWhite
+            TextSettings.WordWrap = True
+            OnChange = chkbxIHaveReadChange
+          end
+        end
+      end
+      object ListBoxGroupFooter1: TListBoxGroupFooter
+        Position.Y = 673.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+      end
+      object ListBoxItem7: TListBoxItem
+        Selectable = False
+        Position.Y = 689.000000000000000000
+        Size.Width = 518.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object btnSubmit: TButton
+          Align = Center
+          Enabled = False
+          Size.Width = 176.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Submit'
+          OnClick = btnSubmitClick
+        end
+      end
+    end
+  end
+end

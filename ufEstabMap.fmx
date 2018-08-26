@@ -1,0 +1,48 @@
+object fraEstabMap: TfraEstabMap
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnCancel: TSpeedButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      OnClick = btnCancelClick
+    end
+    object lblHeaderTItle: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 60.000000000000000000
+      Margins.Right = 60.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Establishment name'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object LocationSensor1: TLocationSensor
+    LocationChange = lctLarge
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 140
+    Top = 88
+  end
+end

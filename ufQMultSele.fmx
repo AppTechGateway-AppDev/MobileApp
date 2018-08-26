@@ -1,0 +1,128 @@
+object fraQMultSele: TfraQMultSele
+  Align = Client
+  Size.Width = 439.000000000000000000
+  Size.Height = 481.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Size.Width = 439.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnCancel: TSpeedButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      OnClick = btnCancelClick
+    end
+    object btnDone: TSpeedButton
+      Align = Right
+      Margins.Right = 5.000000000000000000
+      Position.X = 376.000000000000000000
+      Size.Width = 58.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'donetoolbutton'
+      Text = 'Done'
+      OnClick = btnDoneClick
+    end
+    object lblHeaderTItle: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 439.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Survey Question -multiple select'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Size.Width = 439.000000000000000000
+    Size.Height = 441.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        'Which day of the week do you usually dine out?')
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = True
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 399.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 395.000000000000000000
+      Viewport.Height = 69.000000000000000000
+    end
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 419.000000000000000000
+      Size.Height = 290.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 1
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      ShowCheckboxes = True
+      ParentShowHint = False
+      ShowHint = False
+      Viewport.Width = 419.000000000000000000
+      Viewport.Height = 290.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        StyledSettings = [Family, Size, Style, FontColor]
+        ItemData.Detail = 'Detail Detail'
+        ItemData.Accessory = aCheckmark
+        Size.Width = 419.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Text Text Test'
+        OnClick = ListBoxItem1Click
+      end
+      object ListBoxGroupFooter1: TListBoxGroupFooter
+        Position.Y = 41.000000000000000000
+        Size.Width = 419.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'ListBoxGroupFooter1'
+      end
+    end
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object Button1: TButton
+      Align = Bottom
+      Margins.Top = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 393.000000000000000000
+      Size.Width = 419.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'NEXT'
+      OnClick = Button1Click
+    end
+  end
+end
